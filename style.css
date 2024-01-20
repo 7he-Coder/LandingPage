@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-primary- : #ff69b4;
+    --color-secondary- : #fff;
+    --color-danger- : #000000d1;
+    --color-hover- :#ff69b4e0;
+
+    --bx-sdo- : 0px 9px 11px 0px #e9e9e9;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-secondary-);
+}
+
+header {
+    background-color: var(--color-secondary-);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: var(--bx-sdo-);
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    padding: .5rem 1rem;
+}
+
+a {
+    color: var(--color-danger-);
+    font-size: 1.2rem;
+    transition: all .4s ease-in-out;
+}
+a:hover {
+    color: var(--color-primary-);
+}
+
+.menuBar-icon i{
+    font-size: 1.8rem;
+    color: var(--color-primary-);
+    cursor: pointer;
+}
+
+.hero-cont {
+    padding: 6rem 14rem;
+    display: flex;
+}
+
+h1 {
+    width: 107%;
+    font-size: 4rem;
+    color: var(--color-danger-);
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--color-danger-);
+    font-size: 1.3rem;
+    max-width: 65%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-cont a {
+    background-color: var(--color-secondary-);
+    padding: .5rem 1.5rem;
+    transition: all .4s ease-in-out;
+    border: 1px solid var(--color-primary-);
+}
+
+.hero-cont a:hover {
+    color: var(--color-secondary-);
+    background-color: var(--color-primary-);
+    border: 1px solid var(--color-primary-);
+}
+
+.social-cons {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.social-cons i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background-color: var(--color-primary-);
+    color: var(--color-secondary-);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -5;
+    cursor: pointer;
+}
+
+.social-cons i:hover {
+    background-color: var(--color-hover-);
+}
+
+.right-hr-cont img {
+    width: 26%;
+    position: absolute;
+    top: 26%;
+    right: 14%;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.right-hr-cont img:hover {
+    filter: grayscale(0);
+}
